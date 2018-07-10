@@ -53,6 +53,8 @@ public class RedisMain {
         new Thread(new ThreadRedis(PoolRedis.getJedisPool()) , "Thread-2").start();
         new Thread(new ThreadRedis(PoolRedis.getJedisPool()) , "Thread-3").start();
         
+        
+        //comentario1 
     }     
     
     
