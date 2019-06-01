@@ -46,12 +46,12 @@ public class ThreadRedis implements Runnable{
             
             Long retorno = jedis.setnx("teste", "valor");
             if ( retorno == 1 ){
-                jedis.expire("teste", 20);
+                jedis.expire("teste", 6000);
             }
             
             
             
-            System.out.println("Saida: " + retorno ); 
+            System.out.println(" Thread : "+ Thread.currentThread().getName()  + " Saida: " + retorno ); 
             
         }
         
